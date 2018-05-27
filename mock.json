@@ -1,0 +1,218 @@
+{
+  "version": "v1",
+  "success": true,
+  "data": {
+      "categories": [
+          {
+              "id": 1,
+              "parent_id": null,
+              "is_visible": true,
+              "name": "Root",
+              "description": "Nice one",
+              "picture_filename": "root.png",
+              "ordering": 0,
+              "source_id": null,
+              "symbol": null
+          },
+          {
+              "id": 16,
+              "parent_id": 1,
+              "is_visible": true,
+              "name": "Odzież",
+              "description": "",
+              "picture_filename": "30cbb1cc7e3c9d7180c3f84f0ef4068d.jpg",
+              "ordering": 0,
+              "source_id": null,
+              "symbol": null
+          },
+          {
+              "id": 21,
+              "parent_id": 16,
+              "is_visible": true,
+              "name": "Bluzki",
+              "description": " ",
+              "picture_filename": "",
+              "ordering": 0,
+              "source_id": null,
+              "symbol": null
+          },
+          {
+              "id": 38,
+              "parent_id": 16,
+              "is_visible": true,
+              "name": "Sukienki",
+              "description": "sdfdsfdsf",
+              "picture_filename": "",
+              "ordering": 1,
+              "source_id": null,
+              "symbol": null
+          },
+          {
+              "id": 19,
+              "parent_id": 16,
+              "is_visible": false,
+              "name": "Spódnice",
+              "description": "sdfasdf",
+              "picture_filename": "",
+              "ordering": 2,
+              "source_id": null,
+              "symbol": null
+          },
+          {
+              "id": 39,
+              "parent_id": 16,
+              "is_visible": true,
+              "name": "Spodnie",
+              "description": "",
+              "picture_filename": "",
+              "ordering": 3,
+              "source_id": null,
+              "symbol": null
+          },
+          {
+              "id": 387,
+              "parent_id": 16,
+              "is_visible": true,
+              "name": "Tshirty",
+              "description": "tshirty",
+              "picture_filename": "ssdf",
+              "ordering": 4,
+              "source_id": null,
+              "symbol": null
+          },
+          {
+              "id": 388,
+              "parent_id": 16,
+              "is_visible": true,
+              "name": "Tshirty",
+              "description": "tshirty",
+              "picture_filename": "ssdf",
+              "ordering": 5,
+              "source_id": null,
+              "symbol": null
+          },
+          {
+              "id": 389,
+              "parent_id": 16,
+              "is_visible": true,
+              "name": "Tshirty",
+              "description": "tshirty",
+              "picture_filename": "ssdf",
+              "ordering": 6,
+              "source_id": null,
+              "symbol": null
+          },
+          {
+              "id": 58,
+              "parent_id": 1,
+              "is_visible": true,
+              "name": "Akcesoria",
+              "description": "Drobne dodatki",
+              "picture_filename": "c5f1044389d63aaedb3a40b80b9b08e6.jpg",
+              "ordering": 1,
+              "source_id": null,
+              "symbol": null
+          },
+          {
+              "id": 53,
+              "parent_id": 58,
+              "is_visible": false,
+              "name": "Torebki",
+              "description": " ",
+              "picture_filename": "",
+              "ordering": 0,
+              "source_id": null,
+              "symbol": null
+          },
+          {
+              "id": 157,
+              "parent_id": 53,
+              "is_visible": false,
+              "name": "Torbiele",
+              "description": null,
+              "picture_filename": "",
+              "ordering": 0,
+              "source_id": null,
+              "symbol": null
+          },
+          {
+              "id": 59,
+              "parent_id": 58,
+              "is_visible": true,
+              "name": "Rajstopy",
+              "description": "",
+              "picture_filename": "",
+              "ordering": 1,
+              "source_id": null,
+              "symbol": null
+          },
+          {
+              "id": 26,
+              "parent_id": 59,
+              "is_visible": true,
+              "name": "Styl Gotycki",
+              "description": "",
+              "picture_filename": "",
+              "ordering": 0,
+              "source_id": null,
+              "symbol": null
+          },
+          {
+              "id": 396,
+              "parent_id": 58,
+              "is_visible": true,
+              "name": "Test",
+              "description": "asd",
+              "picture_filename": "",
+              "ordering": 2,
+              "source_id": null,
+              "symbol": null
+          },
+          {
+              "id": 17,
+              "parent_id": 1,
+              "is_visible": true,
+              "name": "Tren",
+              "description": " ",
+              "picture_filename": "",
+              "ordering": 2,
+              "source_id": null,
+              "symbol": null
+          },
+          {
+              "id": 27,
+              "parent_id": 17,
+              "is_visible": true,
+              "name": "Militarne Manewry",
+              "description": " ",
+              "picture_filename": "",
+              "ordering": 0,
+              "source_id": null,
+              "symbol": null
+          },
+          {
+              "id": 393,
+              "parent_id": 17,
+              "is_visible": true,
+              "name": "Wiejskie życie",
+              "description": "nowa kolekcja",
+              "picture_filename": "3123",
+              "ordering": 1,
+              "source_id": null,
+              "symbol": null
+          },
+          {
+              "id": 395,
+              "parent_id": 393,
+              "is_visible": false,
+              "name": "dsf",
+              "description": "dfsfd",
+              "picture_filename": "sfdfds",
+              "ordering": 0,
+              "source_id": null,
+              "symbol": null
+          }
+      ]
+  },
+  "error": null
+}
