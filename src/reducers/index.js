@@ -1,3 +1,7 @@
-export { default as app } from './app';
+import app from './app';
+import login from './login';
 
-export default {};
+export {
+  app,
+  login,
+};

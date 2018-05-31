@@ -1,0 +1,13 @@
+
+.loginWrapper {
+  display: block;
+  margin: 0 auto;
+  padding: 100px;
+  font-size: 26px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.loginButton {
+  margin-left: 20px;
+}

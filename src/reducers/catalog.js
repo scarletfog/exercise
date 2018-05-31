@@ -2,7 +2,7 @@ import {
   FETCH_CATALOG_INIT,
   FETCH_CATALOG_SUCCESS,
   FETCH_CATALOG_FAILURE
-} from '../actions/catalogActions';
+} from '../actions/catalog';
 
 const initialState = {
   items: [],
@@ -10,7 +10,7 @@ const initialState = {
   error: null
 };
 
-export default function productReducer(state = initialState, action) {
+export default function catalogReducer(state = initialState, action) {
   switch (action.type) {
     case FETCH_CATALOG_INIT:
       return {

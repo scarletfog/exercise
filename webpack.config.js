@@ -66,7 +66,7 @@ module.exports = {
             sourceMap: true
           }
         }]
-      }
+      },
     ]
   },
   devServer: {

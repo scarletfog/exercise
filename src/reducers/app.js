@@ -4,7 +4,7 @@ const initialState = {
   loaded: false,
 };
 
-export default function app(state = initialState, action) {
+export default function appReducer(state = initialState, action) {
   switch (action.type) {
     case APP_LOAD:
       return { ...state, loaded: true };

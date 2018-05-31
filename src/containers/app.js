@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 import { connect } from 'react-redux';
 import { loadApp } from 'actions/app';
 import styles from './app.css';
+import LoginPage from './LoginPage';
 
 type Props = {
   dispatch: () => void,
@@ -21,7 +23,13 @@ export class AppContainer extends Component {
     }
 
     return (
-      <div className={styles.container}> test</div>
+      <div className={styles.container}>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Kataaalog</title>
+        </Helmet>
+        <LoginPage />
+      </div>
     );
   }
 }
