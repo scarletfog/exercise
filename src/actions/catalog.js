@@ -1,12 +1,11 @@
 
-import { FETCH_CATALOG_INIT,
+import {
   FETCH_CATALOG_SUCCESS,
-  FETCH_CATALOG_FAILURE
+  FETCH_CATALOG_FAILURE,
+  API_URL,
+  CORS_API_URL,
 } from 'constants/action-types';
 
-export const fetchInit = () => ({
-  type: FETCH_CATALOG_INIT
-});
 
 export const fetchCatalogSuccess = catalog => ({
   type: FETCH_CATALOG_SUCCESS,
@@ -26,16 +25,33 @@ function handleErrors(response) {
   return response;
 }
 
-export function fetchCategories() {
-  return dispatch => {
-    dispatch(fetchInit());
-    return fetch('/categories')
-      .then(handleErrors)
-      .then(res => res.json())
-      .then(json => {
-        dispatch(fetchCatalogSuccess(json.products));
-        return json.products;
-      })
-      .catch(error => dispatch(fetchCatalogError(error)));
-  };
+export function createCategory(userLogin, userPassword) {
+  const url = `${CORS_API_URL + API_URL}/categories`;
+  return fetch(url, {
+    method: 'POST',
+    headers: new Headers({
+      Authorization: `Basic ${btoa(`${userLogin}:${userPassword}`)}`,
+    }),
+  });
 }
+
+export function editCategory(categoryId, userLogin, userPassword) {
+  const url = `${CORS_API_URL + API_URL}/categories${categoryId}`;
+  return fetch(url, {
+    method: 'PUT',
+    headers: new Headers({
+      Authorization: `Basic ${btoa(`${userLogin}:${userPassword}`)}`,
+    }),
+  });
+}
+
+export function deleteCategory(categoryId, userLogin, userPassword) {
+  const url = `${CORS_API_URL + API_URL}/categories${categoryId}`;
+  return fetch(url, {
+    method: 'DELETE',
+    headers: new Headers({
+      Authorization: `Basic ${btoa(`${userLogin}:${userPassword}`)}`,
+    }),
+  });
+}
+

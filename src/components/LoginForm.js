@@ -11,8 +11,8 @@ import Fingerprint from '@material-ui/icons/Fingerprint';
 import blue from '@material-ui/core/colors/blue';
 import grey from '@material-ui/core/colors/grey';
 import Button from '@material-ui/core/Button';
-
 import { connect } from 'react-redux';
+import { history } from '../store/index';
 
 import { loginAction } from '../actions/login';
 // css module styles
@@ -25,12 +25,12 @@ const materialStyles = theme => ({
   },
 });
 
-export class LoginForm extends React.Component<Props> {
+export class LoginForm extends React.Component {
   constructor(props) {
     super();
     this.state = {
-      password: '',
-      login: '',
+      password: 'gBict?3J',
+      login: 'rest',
     };
   }
  handleChange = prop => event => {
@@ -49,7 +49,7 @@ export class LoginForm extends React.Component<Props> {
                <AccountCircle />
              </Grid>
              <Grid item>
-               <TextField id="input-with-icon-grid" label="Login" value={login}onChange={this.handleChange('login')} />
+               <TextField id="input-with-icon" label="Login" value={login}onChange={this.handleChange('login')} />
              </Grid>
            </Grid>
          </FormControl>
@@ -59,7 +59,7 @@ export class LoginForm extends React.Component<Props> {
                <Fingerprint />
              </Grid>
              <Grid item>
-               <TextField id="input-with-icon-grid" label="Password" value={password} onChange={this.handleChange('password')} />
+               <TextField id="input-with-icon-grid" label="Password" value={password} type="password" onChange={this.handleChange('password')} />
              </Grid>
            </Grid>
          </FormControl>
@@ -69,7 +69,7 @@ export class LoginForm extends React.Component<Props> {
              loginAction(login, password)
                .then(success => {
                  if (success) {
-                   console.log(this.props);
+                   history.push({ pathname: '/catalog' });
                  }
                });
            }}

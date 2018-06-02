@@ -4,7 +4,7 @@ import { ConnectedRouter } from 'connected-react-router';
 import { history } from 'store/index';
 import Layout from 'containers/layout';
 import App from 'containers/app';
-import Catalog from 'containers/Catalog';
+import CatalogPage from 'containers/CatalogPage';
 
 
 const routes = (
@@ -12,7 +12,7 @@ const routes = (
     <Layout>
       <Switch>
         <Route exact path="/" component={App} />
-        <Route exact path="/catalog" component={Catalog} />
+        <Route exact path="/catalog" component={CatalogPage} />
       </Switch>
     </Layout>
   </ConnectedRouter>
