@@ -9,7 +9,7 @@ const initialState = {
   loading: false,
   error: null
 };
-
+// TO DO
 export default function catalogReducer(state = initialState, action) {
   switch (action.type) {
     case FETCH_CATALOG_INIT:

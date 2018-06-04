@@ -8,7 +8,7 @@ import {
 const initialState = {
   isLoginSuccess: false,
   isLoginPending: false,
-  loginError: null
+  loginError: null,
 };
 
 export default function Loginreducer(state = initialState, action) {

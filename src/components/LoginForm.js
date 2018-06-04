@@ -29,8 +29,8 @@ export class LoginForm extends React.Component {
   constructor(props) {
     super();
     this.state = {
-      password: 'gBict?3J',
-      login: 'rest',
+      password: '',
+      login: '',
     };
   }
  handleChange = prop => event => {
@@ -40,6 +40,7 @@ export class LoginForm extends React.Component {
  render() {
    const { classes, loginAction } = this.props;
    const { login, password } = this.state;
+
    return (
      <div>
        <Paper className={styles.loginWrapper} style={{ background: blue[300] }}>
@@ -69,7 +70,7 @@ export class LoginForm extends React.Component {
              loginAction(login, password)
                .then(success => {
                  if (success) {
-                   history.push({ pathname: '/catalog' });
+                   history.push({ pathname: '/catalog', state: { login, password } });
                  }
                });
            }}
@@ -89,7 +90,8 @@ LoginForm.propTypes = {
 };
 
 const mapDispatchToProps = (state) => ({
-  login: state.login,
+  login: state.login.loginAction,
 });
 
 export default connect(mapDispatchToProps, { loginAction })(withStyles(materialStyles)(LoginForm));
+

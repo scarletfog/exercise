@@ -26,7 +26,7 @@ export class AppContainer extends Component {
       <div className={styles.container}>
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Kataaalog</title>
+          <title>Catalog</title>
         </Helmet>
         <LoginPage />
       </div>
@@ -34,10 +34,11 @@ export class AppContainer extends Component {
   }
 }
 
-function mapStateToProperties(state) {
+function mapStateToProps(state) {
   return {
-    loaded: state.app.loaded
+    loaded: state.app.loaded,
+    login: state.login
   };
 }
 
-export default connect(mapStateToProperties)(AppContainer);
+export default connect(mapStateToProps)(AppContainer);
